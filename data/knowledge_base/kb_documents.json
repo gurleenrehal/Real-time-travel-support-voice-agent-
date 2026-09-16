@@ -1,0 +1,105 @@
+{
+  "_note": "SYNTHETIC DATA. These are fabricated airline-support policy documents written for this portfolio project only. They do not describe any real airline's actual policy and must never be presented as such.",
+  "documents": [
+    {
+      "doc_id": "kb-001",
+      "category": "flight_cancellation",
+      "text": "If a flight is cancelled by the airline, passengers are entitled to a full refund to the original payment method or a free rebooking on the next available flight, at the passenger's choice. Refund requests must be submitted within 30 days of the cancellation notice. No cancellation fee applies when the airline initiates the cancellation."
+    },
+    {
+      "doc_id": "kb-002",
+      "category": "flight_cancellation",
+      "text": "If a passenger voluntarily cancels a Standard fare ticket more than 24 hours before departure, a cancellation fee of 3000 (local currency) applies and the remaining balance is issued as flight credit valid for 12 months. Flex fare tickets can be cancelled free of charge at any time before departure."
+    },
+    {
+      "doc_id": "kb-003",
+      "category": "flight_delays",
+      "text": "For delays of 3 hours or more on domestic routes, the airline provides meal vouchers and, for delays exceeding 6 hours, hotel accommodation if the delay spans overnight hours. Delay compensation does not apply when the delay is caused by weather, air traffic control restrictions, or security incidents."
+    },
+    {
+      "doc_id": "kb-004",
+      "category": "flight_delays",
+      "text": "Passengers affected by a delay of more than 4 hours may request rebooking on the next available flight at no additional cost, or a full refund if they choose not to travel. Delay status can be checked in real time using the booking reference on the airline's status page."
+    },
+    {
+      "doc_id": "kb-005",
+      "category": "baggage",
+      "text": "Economy passengers are allowed one checked bag up to 23kg and one cabin bag up to 7kg. Excess baggage beyond the allowance is charged at 500 per additional kilogram at the airport counter, or at a discounted rate if pre-purchased online at least 24 hours before departure."
+    },
+    {
+      "doc_id": "kb-006",
+      "category": "baggage",
+      "text": "Sporting equipment, musical instruments, and medical equipment may be carried as special baggage subject to size restrictions and advance notice of at least 48 hours. Fragile or valuable items should be carried in cabin baggage where possible, as checked baggage liability is limited."
+    },
+    {
+      "doc_id": "kb-007",
+      "category": "lost_baggage",
+      "text": "If checked baggage does not arrive at the destination, passengers should file a Property Irregularity Report (PIR) at the airport baggage desk before leaving the airport. Most delayed bags are located and delivered within 48 hours. Compensation for essential items purchased during the delay may be claimed with receipts, up to a documented daily limit."
+    },
+    {
+      "doc_id": "kb-008",
+      "category": "lost_baggage",
+      "text": "Baggage that remains untraced after 21 days is classified as permanently lost, and passengers may file a liability claim for the declared value of the contents, subject to standard weight-based liability limits under applicable carriage conventions."
+    },
+    {
+      "doc_id": "kb-009",
+      "category": "refunds",
+      "text": "Refunds for eligible cancellations are processed within 7 to 20 business days depending on the original payment method; credit card refunds are typically faster than bank transfer refunds. Refund status can be tracked using the refund reference number sent by email at the time of request."
+    },
+    {
+      "doc_id": "kb-010",
+      "category": "refunds",
+      "text": "Partially used tickets are refunded only for the unused sectors, minus any applicable fare-difference recalculation, unless the ticket is a Flex fare, which is refundable in full for the unused portion regardless of fare recalculation rules."
+    },
+    {
+      "doc_id": "kb-011",
+      "category": "rebooking",
+      "text": "Passengers may rebook to a different date or destination up to 2 hours before original departure, subject to fare difference and a rebooking fee for Standard fares; Flex fares waive the rebooking fee. Same-day standby rebooking is available at the airport for a reduced fee, subject to seat availability."
+    },
+    {
+      "doc_id": "kb-012",
+      "category": "rebooking",
+      "text": "When rebooking due to a schedule change initiated by the airline of more than 2 hours, no fare difference or rebooking fee applies, and passengers may choose any available flight within 7 days of the original date, or request a refund instead."
+    },
+    {
+      "doc_id": "kb-013",
+      "category": "check_in",
+      "text": "Online check-in opens 48 hours and closes 60 minutes before domestic departure, and 90 minutes before international departure. Airport check-in counters close 45 minutes before domestic departure and 75 minutes before international departure. Passengers arriving after counter closure may be denied boarding."
+    },
+    {
+      "doc_id": "kb-014",
+      "category": "check_in",
+      "text": "Passengers requiring special assistance (wheelchair, unaccompanied minor service, medical clearance) must request this at least 48 hours before departure through the airline's special-assistance desk, as same-day requests cannot always be guaranteed."
+    },
+    {
+      "doc_id": "kb-015",
+      "category": "travel_documentation",
+      "text": "International passengers must carry a passport valid for at least 6 months beyond the date of return travel, along with any required visa or transit authorization for the destination and layover countries. The airline may deny boarding if documentation requirements are not met, even if the ticket was issued."
+    },
+    {
+      "doc_id": "kb-016",
+      "category": "travel_documentation",
+      "text": "Domestic passengers must present a valid government-issued photo ID matching the name on the booking. Minors travelling without a parent or legal guardian require a notarized consent letter in addition to standard identification."
+    },
+    {
+      "doc_id": "kb-017",
+      "category": "airport_procedures",
+      "text": "Security screening typically takes 15-30 minutes depending on the airport and time of day; passengers are advised to arrive at the airport 2 hours before domestic flights and 3 hours before international flights. Liquids in carry-on baggage are limited to 100ml containers within a single transparent resealable bag."
+    },
+    {
+      "doc_id": "kb-018",
+      "category": "airport_procedures",
+      "text": "Boarding gates typically close 20 minutes before domestic departure and 30 minutes before international departure. Passengers who miss the boarding gate closure are treated as a no-show and standard no-show rebooking or refund rules apply, which are generally less favorable than voluntary cancellation."
+    },
+    {
+      "doc_id": "kb-019",
+      "category": "human_support_escalation",
+      "text": "Requests involving suspected fraud, unauthorized charges, lost or stolen travel documents, medical emergencies, or legal disputes are always escalated to a human support agent and are not resolved by the automated assistant. The assistant will collect a brief summary of the issue and create a priority handoff ticket."
+    },
+    {
+      "doc_id": "kb-020",
+      "category": "human_support_escalation",
+      "text": "Passengers may request a human agent at any point in the conversation by saying so explicitly. The assistant will summarize the conversation so far and hand off the full context to the human agent so the passenger does not need to repeat information."
+    }
+  ]
+}

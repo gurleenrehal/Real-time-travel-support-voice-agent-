@@ -1,0 +1,627 @@
+{
+  "summary": {
+    "total_cases": 30,
+    "retrieval_hit_rate": 0.7,
+    "retrieval_precision_avg": 0.4667,
+    "retrieval_relevance_avg_score": 0.2653,
+    "tool_call_success_rate": 0.6333,
+    "handoff_accuracy": 0.6667,
+    "response_groundedness_rate_on_answerable": 0.8333,
+    "unsupported_claim_rate_overall": 0.2,
+    "correct_unsupported_rate_on_unanswerable": 0.3333,
+    "stt_accuracy": null,
+    "stt_accuracy_note": "Not evaluated: no real audio + reference-transcript pairs available in this environment.",
+    "latency_ms_summary": {
+      "retrieval_ms_avg": 1.521,
+      "retrieval_ms_max": 2.95,
+      "tool_ms_avg": 0.014,
+      "tool_ms_max": 0.068,
+      "llm_ms_avg": 0.005,
+      "llm_ms_max": 0.007,
+      "total_ms_avg": 4.298,
+      "total_ms_max": 8.405
+    }
+  },
+  "cases": [
+    {
+      "id": "eval-01",
+      "category": "flight_cancellation",
+      "retrieval_hit": true,
+      "retrieval_precision": 0.3333333333333333,
+      "retrieval_avg_score": 0.2588,
+      "tool_correct": true,
+      "handoff_correct": false,
+      "handoff_predicted": true,
+      "is_answerable": true,
+      "unsupported": false,
+      "grounded_when_answerable": true,
+      "confidence": 0.4136,
+      "latency_ms": {
+        "retrieval_ms": 2.9498080000109894,
+        "tool_ms": 0.011710999984870796,
+        "llm_ms": 0.005317999978160515,
+        "total_ms": 8.404519999999138
+      }
+    },
+    {
+      "id": "eval-02",
+      "category": "flight_cancellation",
+      "retrieval_hit": true,
+      "retrieval_precision": 0.3333333333333333,
+      "retrieval_avg_score": 0.27613333333333334,
+      "tool_correct": true,
+      "handoff_correct": false,
+      "handoff_predicted": true,
+      "is_answerable": true,
+      "unsupported": false,
+      "grounded_when_answerable": true,
+      "confidence": 0.4041,
+      "latency_ms": {
+        "retrieval_ms": 1.9697009999788406,
+        "tool_ms": 0.008143999991716555,
+        "llm_ms": 0.005372999993369376,
+        "total_ms": 5.543520999992779
+      }
+    },
+    {
+      "id": "eval-03",
+      "category": "flight_cancellation",
+      "retrieval_hit": true,
+      "retrieval_precision": 0.3333333333333333,
+      "retrieval_avg_score": 0.34876666666666667,
+      "tool_correct": true,
+      "handoff_correct": true,
+      "handoff_predicted": false,
+      "is_answerable": true,
+      "unsupported": false,
+      "grounded_when_answerable": true,
+      "confidence": 0.4527,
+      "latency_ms": {
+        "retrieval_ms": 1.8504149999785113,
+        "tool_ms": 0.007525000000896398,
+        "llm_ms": 0.0037279999958172994,
+        "total_ms": 4.719654000012952
+      }
+    },
+    {
+      "id": "eval-04",
+      "category": "baggage",
+      "retrieval_hit": true,
+      "retrieval_precision": 0.3333333333333333,
+      "retrieval_avg_score": 0.20893333333333333,
+      "tool_correct": true,
+      "handoff_correct": true,
+      "handoff_predicted": false,
+      "is_answerable": true,
+      "unsupported": false,
+      "grounded_when_answerable": true,
+      "confidence": 0.5419,
+      "latency_ms": {
+        "retrieval_ms": 1.7084890000091946,
+        "tool_ms": 0.009042000016279417,
+        "llm_ms": 0.006759999990890719,
+        "total_ms": 4.519871000013609
+      }
+    },
+    {
+      "id": "eval-05",
+      "category": "baggage",
+      "retrieval_hit": true,
+      "retrieval_precision": 0.5,
+      "retrieval_avg_score": 0.173,
+      "tool_correct": true,
+      "handoff_correct": true,
+      "handoff_predicted": false,
+      "is_answerable": true,
+      "unsupported": false,
+      "grounded_when_answerable": true,
+      "confidence": 0.64,
+      "latency_ms": {
+        "retrieval_ms": 1.741860000009865,
+        "tool_ms": 0.008323999992398967,
+        "llm_ms": 0.006286999990834374,
+        "total_ms": 4.213259000010794
+      }
+    },
+    {
+      "id": "eval-06",
+      "category": "baggage",
+      "retrieval_hit": true,
+      "retrieval_precision": 0.3333333333333333,
+      "retrieval_avg_score": 0.28386666666666666,
+      "tool_correct": false,
+      "handoff_correct": true,
+      "handoff_predicted": false,
+      "is_answerable": true,
+      "unsupported": false,
+      "grounded_when_answerable": true,
+      "confidence": 0.6158,
+      "latency_ms": {
+        "retrieval_ms": 1.4910529999951905,
+        "tool_ms": 0.007149999987632327,
+        "llm_ms": 0.006863999999495718,
+        "total_ms": 4.097215000001597
+      }
+    },
+    {
+      "id": "eval-07",
+      "category": "refunds",
+      "retrieval_hit": false,
+      "retrieval_precision": 0.0,
+      "retrieval_avg_score": 0.30515000000000003,
+      "tool_correct": true,
+      "handoff_correct": true,
+      "handoff_predicted": false,
+      "is_answerable": true,
+      "unsupported": false,
+      "grounded_when_answerable": true,
+      "confidence": 0.46,
+      "latency_ms": {
+        "retrieval_ms": 1.6037460000006831,
+        "tool_ms": 0.007903000010855976,
+        "llm_ms": 0.003553999988525902,
+        "total_ms": 4.292082999995728
+      }
+    },
+    {
+      "id": "eval-08",
+      "category": "refunds",
+      "retrieval_hit": true,
+      "retrieval_precision": 1.0,
+      "retrieval_avg_score": 0.3127,
+      "tool_correct": true,
+      "handoff_correct": false,
+      "handoff_predicted": true,
+      "is_answerable": true,
+      "unsupported": false,
+      "grounded_when_answerable": true,
+      "confidence": 0.3876,
+      "latency_ms": {
+        "retrieval_ms": 1.4041919999954189,
+        "tool_ms": 0.006942999988268639,
+        "llm_ms": 0.003507000002400673,
+        "total_ms": 3.974459999994906
+      }
+    },
+    {
+      "id": "eval-09",
+      "category": "refunds",
+      "retrieval_hit": true,
+      "retrieval_precision": 1.0,
+      "retrieval_avg_score": 0.4559,
+      "tool_correct": true,
+      "handoff_correct": true,
+      "handoff_predicted": false,
+      "is_answerable": true,
+      "unsupported": false,
+      "grounded_when_answerable": true,
+      "confidence": 0.4735,
+      "latency_ms": {
+        "retrieval_ms": 1.4688470000123743,
+        "tool_ms": 0.0070049999862931145,
+        "llm_ms": 0.0030749999950785423,
+        "total_ms": 3.8484780000089813
+      }
+    },
+    {
+      "id": "eval-10",
+      "category": "flight_delays",
+      "retrieval_hit": true,
+      "retrieval_precision": 0.5,
+      "retrieval_avg_score": 0.1842,
+      "tool_correct": true,
+      "handoff_correct": false,
+      "handoff_predicted": true,
+      "is_answerable": true,
+      "unsupported": true,
+      "grounded_when_answerable": false,
+      "confidence": 0.1,
+      "latency_ms": {
+        "retrieval_ms": 1.4443970000002082,
+        "tool_ms": 0.006783000003451889,
+        "llm_ms": 0.002524999985098475,
+        "total_ms": 4.06092800000124
+      }
+    },
+    {
+      "id": "eval-11",
+      "category": "flight_delays",
+      "retrieval_hit": false,
+      "retrieval_precision": 0.0,
+      "retrieval_avg_score": 0.21485,
+      "tool_correct": false,
+      "handoff_correct": true,
+      "handoff_predicted": false,
+      "is_answerable": true,
+      "unsupported": false,
+      "grounded_when_answerable": true,
+      "confidence": 0.5404,
+      "latency_ms": {
+        "retrieval_ms": 1.453831999981503,
+        "tool_ms": 0.057908000002271365,
+        "llm_ms": 0.006102000014607256,
+        "total_ms": 3.935860000012781
+      }
+    },
+    {
+      "id": "eval-12",
+      "category": "flight_delays",
+      "retrieval_hit": false,
+      "retrieval_precision": 0.0,
+      "retrieval_avg_score": 0.3393,
+      "tool_correct": true,
+      "handoff_correct": true,
+      "handoff_predicted": false,
+      "is_answerable": true,
+      "unsupported": false,
+      "grounded_when_answerable": true,
+      "confidence": 0.6036,
+      "latency_ms": {
+        "retrieval_ms": 1.4502920000154518,
+        "tool_ms": 0.01985599999443366,
+        "llm_ms": 0.00688400001536138,
+        "total_ms": 3.820138999998335
+      }
+    },
+    {
+      "id": "eval-13",
+      "category": "rebooking",
+      "retrieval_hit": true,
+      "retrieval_precision": 0.3333333333333333,
+      "retrieval_avg_score": 0.32043333333333335,
+      "tool_correct": false,
+      "handoff_correct": false,
+      "handoff_predicted": true,
+      "is_answerable": true,
+      "unsupported": false,
+      "grounded_when_answerable": true,
+      "confidence": 0.3579,
+      "latency_ms": {
+        "retrieval_ms": 1.5002469999956247,
+        "tool_ms": 0.016268999985413757,
+        "llm_ms": 0.005743000002667031,
+        "total_ms": 4.171595000002526
+      }
+    },
+    {
+      "id": "eval-14",
+      "category": "rebooking",
+      "retrieval_hit": true,
+      "retrieval_precision": 0.3333333333333333,
+      "retrieval_avg_score": 0.3637333333333333,
+      "tool_correct": false,
+      "handoff_correct": false,
+      "handoff_predicted": true,
+      "is_answerable": true,
+      "unsupported": false,
+      "grounded_when_answerable": true,
+      "confidence": 0.4216,
+      "latency_ms": {
+        "retrieval_ms": 1.4674040000102195,
+        "tool_ms": 0.014960999976665335,
+        "llm_ms": 0.0057559999788736604,
+        "total_ms": 4.046020999993516
+      }
+    },
+    {
+      "id": "eval-15",
+      "category": "rebooking",
+      "retrieval_hit": true,
+      "retrieval_precision": 1.0,
+      "retrieval_avg_score": 0.289,
+      "tool_correct": false,
+      "handoff_correct": true,
+      "handoff_predicted": false,
+      "is_answerable": true,
+      "unsupported": false,
+      "grounded_when_answerable": true,
+      "confidence": 0.5734,
+      "latency_ms": {
+        "retrieval_ms": 1.4387909999982185,
+        "tool_ms": 0.068294000016067,
+        "llm_ms": 0.006499000022586188,
+        "total_ms": 3.912801000012678
+      }
+    },
+    {
+      "id": "eval-16",
+      "category": "lost_baggage",
+      "retrieval_hit": true,
+      "retrieval_precision": 0.3333333333333333,
+      "retrieval_avg_score": 0.22719999999999999,
+      "tool_correct": false,
+      "handoff_correct": true,
+      "handoff_predicted": false,
+      "is_answerable": true,
+      "unsupported": false,
+      "grounded_when_answerable": true,
+      "confidence": 0.5616,
+      "latency_ms": {
+        "retrieval_ms": 1.5662859999849843,
+        "tool_ms": 0.007611999990331242,
+        "llm_ms": 0.006578000011359109,
+        "total_ms": 4.215277000014339
+      }
+    },
+    {
+      "id": "eval-17",
+      "category": "lost_baggage",
+      "retrieval_hit": true,
+      "retrieval_precision": 0.3333333333333333,
+      "retrieval_avg_score": 0.22513333333333332,
+      "tool_correct": false,
+      "handoff_correct": true,
+      "handoff_predicted": false,
+      "is_answerable": true,
+      "unsupported": false,
+      "grounded_when_answerable": true,
+      "confidence": 0.5642,
+      "latency_ms": {
+        "retrieval_ms": 1.4647529999933795,
+        "tool_ms": 0.021163000013757483,
+        "llm_ms": 0.00719200002663456,
+        "total_ms": 4.208218000002262
+      }
+    },
+    {
+      "id": "eval-18",
+      "category": "lost_baggage",
+      "retrieval_hit": false,
+      "retrieval_precision": 0.0,
+      "retrieval_avg_score": 0.274,
+      "tool_correct": true,
+      "handoff_correct": false,
+      "handoff_predicted": true,
+      "is_answerable": true,
+      "unsupported": false,
+      "grounded_when_answerable": true,
+      "confidence": 0.4252,
+      "latency_ms": {
+        "retrieval_ms": 1.4419439999926453,
+        "tool_ms": 0.007242000009455296,
+        "llm_ms": 0.0032550000241826638,
+        "total_ms": 4.340992999999571
+      }
+    },
+    {
+      "id": "eval-19",
+      "category": "travel_documentation",
+      "retrieval_hit": true,
+      "retrieval_precision": 1.0,
+      "retrieval_avg_score": 0.1625,
+      "tool_correct": true,
+      "handoff_correct": false,
+      "handoff_predicted": true,
+      "is_answerable": true,
+      "unsupported": true,
+      "grounded_when_answerable": false,
+      "confidence": 0.1,
+      "latency_ms": {
+        "retrieval_ms": 1.3727270000174485,
+        "tool_ms": 0.006878999982973255,
+        "llm_ms": 0.002457999983107584,
+        "total_ms": 4.021090000009053
+      }
+    },
+    {
+      "id": "eval-20",
+      "category": "travel_documentation",
+      "retrieval_hit": true,
+      "retrieval_precision": 1.0,
+      "retrieval_avg_score": 0.1804,
+      "tool_correct": true,
+      "handoff_correct": false,
+      "handoff_predicted": true,
+      "is_answerable": true,
+      "unsupported": true,
+      "grounded_when_answerable": false,
+      "confidence": 0.1,
+      "latency_ms": {
+        "retrieval_ms": 1.4016320000109772,
+        "tool_ms": 0.006957000010743286,
+        "llm_ms": 0.0023450000128377724,
+        "total_ms": 4.165915999976733
+      }
+    },
+    {
+      "id": "eval-21",
+      "category": "travel_documentation",
+      "retrieval_hit": true,
+      "retrieval_precision": 1.0,
+      "retrieval_avg_score": 0.2703,
+      "tool_correct": true,
+      "handoff_correct": false,
+      "handoff_predicted": true,
+      "is_answerable": true,
+      "unsupported": false,
+      "grounded_when_answerable": true,
+      "confidence": 0.3622,
+      "latency_ms": {
+        "retrieval_ms": 1.35690800001953,
+        "tool_ms": 0.007393000004185524,
+        "llm_ms": 0.0030870000102822814,
+        "total_ms": 3.9494760000025053
+      }
+    },
+    {
+      "id": "eval-22",
+      "category": "ambiguous",
+      "retrieval_hit": false,
+      "retrieval_precision": 0.0,
+      "retrieval_avg_score": 0.2213333333333333,
+      "tool_correct": true,
+      "handoff_correct": true,
+      "handoff_predicted": true,
+      "is_answerable": false,
+      "unsupported": false,
+      "grounded_when_answerable": null,
+      "confidence": 0.3771,
+      "latency_ms": {
+        "retrieval_ms": 1.3527049999879637,
+        "tool_ms": 0.006578000011359109,
+        "llm_ms": 0.0032630000248445867,
+        "total_ms": 4.037675999995827
+      }
+    },
+    {
+      "id": "eval-23",
+      "category": "ambiguous",
+      "retrieval_hit": true,
+      "retrieval_precision": 1.0,
+      "retrieval_avg_score": null,
+      "tool_correct": true,
+      "handoff_correct": true,
+      "handoff_predicted": true,
+      "is_answerable": false,
+      "unsupported": true,
+      "grounded_when_answerable": null,
+      "confidence": 0.1,
+      "latency_ms": {
+        "retrieval_ms": 1.3662199999942004,
+        "tool_ms": 0.006869999992886733,
+        "llm_ms": 0.002561000002287983,
+        "total_ms": 4.1436570000144
+      }
+    },
+    {
+      "id": "eval-24",
+      "category": "ambiguous",
+      "retrieval_hit": true,
+      "retrieval_precision": 1.0,
+      "retrieval_avg_score": null,
+      "tool_correct": true,
+      "handoff_correct": true,
+      "handoff_predicted": true,
+      "is_answerable": false,
+      "unsupported": true,
+      "grounded_when_answerable": null,
+      "confidence": 0.1,
+      "latency_ms": {
+        "retrieval_ms": 1.3267519999828892,
+        "tool_ms": 0.0060509999855185015,
+        "llm_ms": 0.0024200000154905865,
+        "total_ms": 4.020828999983905
+      }
+    },
+    {
+      "id": "eval-25",
+      "category": "unsupported",
+      "retrieval_hit": false,
+      "retrieval_precision": 0.0,
+      "retrieval_avg_score": 0.2213333333333333,
+      "tool_correct": true,
+      "handoff_correct": true,
+      "handoff_predicted": true,
+      "is_answerable": false,
+      "unsupported": false,
+      "grounded_when_answerable": null,
+      "confidence": 0.3771,
+      "latency_ms": {
+        "retrieval_ms": 1.3207469999940713,
+        "tool_ms": 0.006358999996791681,
+        "llm_ms": 0.0031980000017028942,
+        "total_ms": 4.080650999981117
+      }
+    },
+    {
+      "id": "eval-26",
+      "category": "unsupported",
+      "retrieval_hit": false,
+      "retrieval_precision": 0.0,
+      "retrieval_avg_score": 0.23199999999999998,
+      "tool_correct": false,
+      "handoff_correct": true,
+      "handoff_predicted": true,
+      "is_answerable": false,
+      "unsupported": false,
+      "grounded_when_answerable": null,
+      "confidence": 0.3045,
+      "latency_ms": {
+        "retrieval_ms": 1.32660699998155,
+        "tool_ms": 0.0184980000028645,
+        "llm_ms": 0.0054079999927125755,
+        "total_ms": 3.9725759999953425
+      }
+    },
+    {
+      "id": "eval-27",
+      "category": "unsupported",
+      "retrieval_hit": true,
+      "retrieval_precision": 1.0,
+      "retrieval_avg_score": null,
+      "tool_correct": false,
+      "handoff_correct": true,
+      "handoff_predicted": true,
+      "is_answerable": false,
+      "unsupported": false,
+      "grounded_when_answerable": null,
+      "confidence": 0.36,
+      "latency_ms": {
+        "retrieval_ms": 1.3549139999895488,
+        "tool_ms": 0.01765700000078141,
+        "llm_ms": 0.0057919999960631685,
+        "total_ms": 4.086509000018168
+      }
+    },
+    {
+      "id": "eval-28",
+      "category": "human_handoff",
+      "retrieval_hit": false,
+      "retrieval_precision": 0.0,
+      "retrieval_avg_score": 0.1712,
+      "tool_correct": false,
+      "handoff_correct": true,
+      "handoff_predicted": true,
+      "is_answerable": true,
+      "unsupported": false,
+      "grounded_when_answerable": true,
+      "confidence": 0.36,
+      "latency_ms": {
+        "retrieval_ms": 1.3262229999781994,
+        "tool_ms": 0.018587999988994852,
+        "llm_ms": 0.005557999998018204,
+        "total_ms": 4.019481999989694
+      }
+    },
+    {
+      "id": "eval-29",
+      "category": "human_handoff",
+      "retrieval_hit": true,
+      "retrieval_precision": 1.0,
+      "retrieval_avg_score": null,
+      "tool_correct": true,
+      "handoff_correct": true,
+      "handoff_predicted": true,
+      "is_answerable": true,
+      "unsupported": true,
+      "grounded_when_answerable": false,
+      "confidence": 0.1,
+      "latency_ms": {
+        "retrieval_ms": 1.3465070000222568,
+        "tool_ms": 0.008000000008223651,
+        "llm_ms": 0.0025490000155059533,
+        "total_ms": 4.012200999994775
+      }
+    },
+    {
+      "id": "eval-30",
+      "category": "human_handoff",
+      "retrieval_hit": false,
+      "retrieval_precision": 0.0,
+      "retrieval_avg_score": 0.37645,
+      "tool_correct": false,
+      "handoff_correct": true,
+      "handoff_predicted": true,
+      "is_answerable": true,
+      "unsupported": false,
+      "grounded_when_answerable": true,
+      "confidence": 0.7122,
+      "latency_ms": {
+        "retrieval_ms": 1.3667860000055043,
+        "tool_ms": 0.013231999986373921,
+        "llm_ms": 0.006961000025285102,
+        "total_ms": 4.092323000008946
+      }
+    }
+  ]
+}

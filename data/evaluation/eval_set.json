@@ -1,0 +1,44 @@
+{
+  "_note": "SYNTHETIC evaluation set written for this portfolio project. Ground-truth labels (expected_relevant_doc_ids, expected_tool, expect_handoff, is_answerable) were authored by hand alongside the knowledge base, not measured from any real system.",
+  "cases": [
+    {"id": "eval-01", "category": "flight_cancellation", "user_text": "My flight was cancelled by the airline, what happens to my ticket?", "expected_relevant_doc_ids": ["kb-001"], "expected_tool": null, "expect_handoff": false, "is_answerable": true},
+    {"id": "eval-02", "category": "flight_cancellation", "user_text": "If I cancel my standard fare ticket myself two days before departure, do I get a refund?", "expected_relevant_doc_ids": ["kb-002"], "expected_tool": null, "expect_handoff": false, "is_answerable": true},
+    {"id": "eval-03", "category": "flight_cancellation", "user_text": "Is there a cancellation fee for Flex fare tickets?", "expected_relevant_doc_ids": ["kb-002"], "expected_tool": null, "expect_handoff": false, "is_answerable": true},
+
+    {"id": "eval-04", "category": "baggage", "user_text": "What is the checked baggage weight limit for economy class?", "expected_relevant_doc_ids": ["kb-005"], "expected_tool": "lookup_baggage_policy", "expect_handoff": false, "is_answerable": true},
+    {"id": "eval-05", "category": "baggage", "user_text": "How much does excess baggage cost per kg?", "expected_relevant_doc_ids": ["kb-005"], "expected_tool": "lookup_baggage_policy", "expect_handoff": false, "is_answerable": true},
+    {"id": "eval-06", "category": "baggage", "user_text": "Can I bring my guitar as checked baggage?", "expected_relevant_doc_ids": ["kb-006"], "expected_tool": null, "expect_handoff": false, "is_answerable": true},
+
+    {"id": "eval-07", "category": "refunds", "user_text": "How long does a refund take to process after a cancellation?", "expected_relevant_doc_ids": ["kb-009"], "expected_tool": null, "expect_handoff": false, "is_answerable": true},
+    {"id": "eval-08", "category": "refunds", "user_text": "If I only used half my ticket, do I get the rest refunded?", "expected_relevant_doc_ids": ["kb-010"], "expected_tool": null, "expect_handoff": false, "is_answerable": true},
+    {"id": "eval-09", "category": "refunds", "user_text": "Is a credit card refund faster than a bank transfer refund?", "expected_relevant_doc_ids": ["kb-009"], "expected_tool": null, "expect_handoff": false, "is_answerable": true},
+
+    {"id": "eval-10", "category": "flight_delays", "user_text": "My flight is delayed by 4 hours, am I entitled to a meal voucher?", "expected_relevant_doc_ids": ["kb-003"], "expected_tool": null, "expect_handoff": false, "is_answerable": true},
+    {"id": "eval-11", "category": "flight_delays", "user_text": "Can I get rebooked for free if my flight is delayed more than 4 hours?", "expected_relevant_doc_ids": ["kb-004"], "expected_tool": null, "expect_handoff": false, "is_answerable": true},
+    {"id": "eval-12", "category": "flight_delays", "user_text": "What's the status of booking PNR1003, is it delayed?", "expected_relevant_doc_ids": [], "expected_tool": "lookup_booking_status", "expect_handoff": false, "is_answerable": true},
+
+    {"id": "eval-13", "category": "rebooking", "user_text": "What rebooking options are there for flight AI-202?", "expected_relevant_doc_ids": ["kb-011"], "expected_tool": "check_rebooking_options", "expect_handoff": false, "is_answerable": true},
+    {"id": "eval-14", "category": "rebooking", "user_text": "Is there a rebooking fee if the airline changed my schedule?", "expected_relevant_doc_ids": ["kb-012"], "expected_tool": null, "expect_handoff": false, "is_answerable": true},
+    {"id": "eval-15", "category": "rebooking", "user_text": "Can I rebook to a different destination two hours before my flight?", "expected_relevant_doc_ids": ["kb-011"], "expected_tool": null, "expect_handoff": false, "is_answerable": true},
+
+    {"id": "eval-16", "category": "lost_baggage", "user_text": "My checked bag did not arrive at the destination, what should I do?", "expected_relevant_doc_ids": ["kb-007"], "expected_tool": null, "expect_handoff": false, "is_answerable": true},
+    {"id": "eval-17", "category": "lost_baggage", "user_text": "I want to file a lost baggage report for booking PNR1001, my bag has a broken zipper and missing contents.", "expected_relevant_doc_ids": ["kb-007"], "expected_tool": "report_lost_baggage", "expect_handoff": false, "is_answerable": true},
+    {"id": "eval-18", "category": "lost_baggage", "user_text": "It has been three weeks and my bag is still missing, what happens now?", "expected_relevant_doc_ids": ["kb-008"], "expected_tool": null, "expect_handoff": false, "is_answerable": true},
+
+    {"id": "eval-19", "category": "travel_documentation", "user_text": "Do I need a visa if I'm just transiting through another country?", "expected_relevant_doc_ids": ["kb-015"], "expected_tool": null, "expect_handoff": false, "is_answerable": true},
+    {"id": "eval-20", "category": "travel_documentation", "user_text": "Can my child travel alone without a parent?", "expected_relevant_doc_ids": ["kb-016"], "expected_tool": null, "expect_handoff": false, "is_answerable": true},
+    {"id": "eval-21", "category": "travel_documentation", "user_text": "How many months of passport validity do I need for an international flight?", "expected_relevant_doc_ids": ["kb-015"], "expected_tool": null, "expect_handoff": false, "is_answerable": true},
+
+    {"id": "eval-22", "category": "ambiguous", "user_text": "What about my flight?", "expected_relevant_doc_ids": [], "expected_tool": null, "expect_handoff": true, "is_answerable": false},
+    {"id": "eval-23", "category": "ambiguous", "user_text": "Can you help me with the thing from before?", "expected_relevant_doc_ids": [], "expected_tool": null, "expect_handoff": true, "is_answerable": false},
+    {"id": "eval-24", "category": "ambiguous", "user_text": "Is it fine?", "expected_relevant_doc_ids": [], "expected_tool": null, "expect_handoff": true, "is_answerable": false},
+
+    {"id": "eval-25", "category": "unsupported", "user_text": "What is the in-flight wifi password policy?", "expected_relevant_doc_ids": [], "expected_tool": null, "expect_handoff": true, "is_answerable": false},
+    {"id": "eval-26", "category": "unsupported", "user_text": "Do you offer frequent flyer status matching from other airline alliances?", "expected_relevant_doc_ids": [], "expected_tool": null, "expect_handoff": true, "is_answerable": false},
+    {"id": "eval-27", "category": "unsupported", "user_text": "What's the corporate discount code for group bookings over 50 passengers?", "expected_relevant_doc_ids": [], "expected_tool": null, "expect_handoff": true, "is_answerable": false},
+
+    {"id": "eval-28", "category": "human_handoff", "user_text": "I think someone made an unauthorized charge on my card for this booking, this looks like fraud.", "expected_relevant_doc_ids": [], "expected_tool": null, "expect_handoff": true, "is_answerable": true},
+    {"id": "eval-29", "category": "human_handoff", "user_text": "I lost my passport at the airport and my flight is in two hours, this is a medical emergency too, my father is unwell.", "expected_relevant_doc_ids": [], "expected_tool": null, "expect_handoff": true, "is_answerable": true},
+    {"id": "eval-30", "category": "human_handoff", "user_text": "I don't want to deal with the bot anymore, I want to speak to a human agent right now.", "expected_relevant_doc_ids": [], "expected_tool": null, "expect_handoff": true, "is_answerable": true}
+  ]
+}
