@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Travel Support Voice Agent — Demo</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main>
+    <h1>Real-Time Travel Support Voice Agent</h1>
+    <p class="subtitle">Portfolio demo — text or (browser-permitting) voice turns over WebSocket.</p>
+
+    <section class="panel">
+      <div class="controls">
+        <button id="micBtn">🎙️ Start recording</button>
+        <span id="recordingIndicator" class="hidden">● recording…</span>
+      </div>
+      <form id="textForm">
+        <input id="textInput" type="text" placeholder="Type a message instead of speaking…" autocomplete="off" />
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <section class="panel">
+      <h2>Conversation</h2>
+      <div id="conversation" class="conversation"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Turn details</h2>
+      <div class="grid">
+        <div>
+          <h3>Latency (ms)</h3>
+          <pre id="latencyBox">—</pre>
+        </div>
+        <div>
+          <h3>Handoff status</h3>
+          <pre id="handoffBox">none</pre>
+        </div>
+      </div>
+      <audio id="player" controls></audio>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
